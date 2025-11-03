@@ -1,0 +1,6 @@
+<h2>Countries</h2>
+<div *ngFor="let country of countries">
+  <a routerLink="/country/{{country.id}}">
+    <h1>{{country.name}}</h1>
+  </a>
+</div>
