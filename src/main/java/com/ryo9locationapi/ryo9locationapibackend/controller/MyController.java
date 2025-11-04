@@ -1,9 +1,7 @@
 package com.ryo9locationapi.ryo9locationapibackend.controller;
 
-// Import our model and service
 import com.ryo9locationapi.ryo9locationapibackend.model.Country;
 import com.ryo9locationapi.ryo9locationapibackend.service.ICountryService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +33,6 @@ public class MyController {
 
     @PutMapping("/update-country/{id}")
     public Country updateCountry(@PathVariable long id, @RequestBody Country countryDetails) {
-        // This now correctly passes the ID and the new data to the service
         return countryService.updateCountry(id, countryDetails);
     }
 

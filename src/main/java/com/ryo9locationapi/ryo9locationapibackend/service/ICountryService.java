@@ -2,7 +2,6 @@ package com.ryo9locationapi.ryo9locationapibackend.service;
 
 import com.ryo9locationapi.ryo9locationapibackend.model.Country;
 import java.util.List;
-import java.util.Optional;
 
 public interface ICountryService {
 
